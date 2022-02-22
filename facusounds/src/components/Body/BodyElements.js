@@ -36,5 +36,5 @@ export const ButtonsArea = styled.div`
   /* height: 60vh; */
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
 `

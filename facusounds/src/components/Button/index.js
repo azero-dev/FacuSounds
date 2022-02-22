@@ -1,12 +1,17 @@
-import React, { Children } from 'react'
-import { ButtonArea } from './ButtonElements'
+import * as React from 'react'
+import { ButtonStyle } from './ButtonElements'
 
-const Button = () => {
+const Button = value => {
+
+  // const audioTune = new Audio(PutaMierda);
+
+  // const playSound = () => {
+  //   audioTune.play();
+  // }
+
   return (
     <>
-      <ButtonArea>
-        
-      </ButtonArea>
+      <ButtonStyle>{value['value'][1]}</ButtonStyle>
     </>
   )
 }
