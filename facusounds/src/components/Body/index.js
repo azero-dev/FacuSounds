@@ -1,10 +1,9 @@
-import React, { Children, useEffect } from 'react'
-import { BodyBG, BodyVideo, BodyTitle, ButtonsArea } from './BodyElements'
+import React from 'react'
+import { BodyBG, BodyVideo, BodyTitle, ButtonsTitle, ButtonsArea } from './BodyElements'
 import vidback from '../../video/vidback.mp4'
 
 import facudiaz from '../../images/facudiaz.png'
 import Buttons from '../Buttons'
-import Layout from '../layout.css'
 
 const Body = () => {
   return (
@@ -18,8 +17,13 @@ const Body = () => {
         <BodyTitle>
           <img src={facudiaz} alt="Facu Diaz" style={{height: '20vh', margin: '10px'}} />
         </BodyTitle>
+        <ButtonsTitle>Audios:</ButtonsTitle>
         <ButtonsArea>
-          <Buttons />
+          <Buttons mode="audios" />
+        </ButtonsArea>
+        <ButtonsTitle>Musiquita</ButtonsTitle>
+        <ButtonsArea>
+          <Buttons  mode="music" />
         </ButtonsArea>
       </BodyBG>
     </>

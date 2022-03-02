@@ -6,10 +6,11 @@ export const ButtonStyle = styled.div`
   align-items: center;
   width: 100%;
   height: 100%;
-  font-size: 1.1em;
+  font-size: 1.4em;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
+  font-weight: bold;
   outline: none;
   color: #fff;
   background-color: #cc0000;

@@ -1,9 +1,10 @@
 {
-  "name": "FacuSounds",
+  "name": "facusounds",
   "private": true,
   "description": "FacuSounds (anti)System",
   "version": "0.1.0",
   "author": "Anonymous United in the Morning",
+  "homepage": ".",
   "dependencies": {
     "gatsby": "^4.7.2",
     "gatsby-plugin-gatsby-cloud": "^4.7.0",
