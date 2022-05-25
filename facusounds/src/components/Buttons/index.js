@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { ButtonArea } from './ButtonElements'
 import Button from '../Button'
+import { useStaticQuery, graphql } from "gatsby"
 
 
 const audioNames = {
@@ -32,16 +33,53 @@ const musicNames = {
 
 const Buttons = mode => {
 
+  //Query Audios
+  const audiosObject = useStaticQuery(graphql`
+    query SoundFetch {
+      allFile(
+        filter: {sourceInstanceName: {eq: "audios"}, relativeDirectory: {eq: "audios"}}
+      ) {
+        nodes {
+          name
+          sourceInstanceName
+          relativeDirectory
+          absolutePath
+          publicURL
+        }
+      }
+    }
+  `)
+
+  //Query Music
+  const musicObject = useStaticQuery(graphql`
+    query MusicFetch {
+      allFile(
+        filter: {sourceInstanceName: {eq: "audios"}, relativeDirectory: {eq: "musiquita"}}
+      ) {
+        nodes {
+          name
+          sourceInstanceName
+          relativeDirectory
+          absolutePath
+          publicURL
+        }
+      }
+    }  
+  `)
+  
+
+  const dataAudios = audiosObject.allFile.nodes
+  const dataMusic = musicObject.allFile.nodes
   let ret = mode.mode
 
   return (
     <>
       {ret === 'audios' ? 
-        Object.entries(audioNames).map((val) => {
+        dataAudios.map(val => {
         return <ButtonArea><Button value={val}></Button></ButtonArea>
         })
         :
-        Object.entries(musicNames).map((val) => {
+        dataAudios.map(val => {
         return <ButtonArea><Button value={val}></Button></ButtonArea>
         })
       }
