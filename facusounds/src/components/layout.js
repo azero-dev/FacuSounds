@@ -29,7 +29,7 @@ const Layout = ({ children }) => {
           height: '10vh',
           padding: "2vh 0",
           color: "white",
-          'z-index': '10',
+          'zIndex': '10',
         }}>
         <p style={{
             padding: "0 4vw",
@@ -38,8 +38,8 @@ const Layout = ({ children }) => {
           <a href="https://www.twitch.tv/fadrians"
             style={{
               color: "white",
-              "font-weight": "bold",
-              "text-decoration": "none",
+              "fontWeight": "bold",
+              "textDecoration": "none",
             }}> fadrians </a>{" "} por haber encontrao el "Bieeeen!".
         </p>
       </footer>

@@ -3,7 +3,7 @@ module.exports = {
     title: `FacuSounds`,
     description: `FacuSounds (anti)System`,
     author: `Anonymous United in the Morning`,
-    siteUrl: `https://inferente.com/`,
+    siteUrl: `https://bditm.es/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -28,15 +28,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `facusounds`,
+        short_name: `facusounds`,
         start_url: `/`,
-        background_color: `#663399`,
-        // This will impact how browsers show your PWA/website
-        // https://css-tricks.com/meta-theme-color-and-trickery/
-        // theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        background_color: `#cc0000`,
+        display: `standalone`,
+        icon: `src/images/FacuLogo.png`,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

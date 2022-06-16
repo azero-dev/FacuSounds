@@ -6,7 +6,7 @@ import Body from '../components/Body'
 
 const IndexPage = () => (
   <Layout>
-    <Seo title="Home" />
+    <Seo title="FacuSounds" />
     <Body />
   </Layout>
 )

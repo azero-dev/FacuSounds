@@ -16,6 +16,13 @@ export const BodyVideo = styled.div`
   overflow: hidden;
   bottom: 10%;
   z-index: 0;
+
+@media (max-width: 600px) {
+  width: auto;
+  height: 80vh;
+  bottom: initial;
+  top: 0;
+}
 `
 
 export const BodyTitle = styled.div`

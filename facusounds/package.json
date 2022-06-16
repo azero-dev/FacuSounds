@@ -4,7 +4,6 @@
   "description": "FacuSounds (anti)System",
   "version": "0.1.0",
   "author": "Anonymous United in the Morning",
-  "homepage": ".",
   "dependencies": {
     "babel-plugin-styled-components": "^2.0.6",
     "gatsby": "^4.7.2",

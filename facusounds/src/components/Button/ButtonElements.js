@@ -19,6 +19,10 @@ export const ButtonStyle = styled.div`
   box-shadow: 2px 6px #3d0000;
   user-select: none;
   transition: background-color .2s;
+  overflow-wrap: anywhere;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 
   &:hover {
     background-color: #a30000;

@@ -1,9 +1,9 @@
 import React from 'react'
 import { BodyBG, BodyVideo, BodyTitle, ButtonsTitle, ButtonsArea } from './BodyElements'
-import vidback from '../../video/vidback.mp4'
-
-import facudiaz from '../../images/facudiaz.png'
 import Buttons from '../Buttons'
+
+import vidback from '../../video/vidback.mp4'
+import facudiaz from '../../images/facudiaz.png'
 
 const Body = () => {
   return (
@@ -17,7 +17,7 @@ const Body = () => {
         <BodyTitle>
           <img src={facudiaz} alt="Facu Diaz" style={{height: '20vh', margin: '10px'}} />
         </BodyTitle>
-        <ButtonsTitle>Audios:</ButtonsTitle>
+        <ButtonsTitle>Audios</ButtonsTitle>
         <ButtonsArea>
           <Buttons mode="audios" />
         </ButtonsArea>

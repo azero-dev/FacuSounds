@@ -8,7 +8,7 @@ const Header = ({ siteTitle }) => (
       position: 'relative',
       background: '#cc0000',
       height: "10vh",
-      'z-index': '10',
+      'zIndex': '10',
     }}
   >
     <div
