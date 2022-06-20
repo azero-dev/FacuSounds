@@ -25,10 +25,10 @@ body {
 
 /* CSS for background video */
 #VidBG {
-  width: 100vw;
+  width: 110vw;
   position: fixed;
   overflow: hidden;
-  bottom: 10%;
+  bottom: 10vh;
   z-index: 0;
 }
 
@@ -36,7 +36,8 @@ body {
   #VidBG {
     width: auto;
     height: 80vh;
-    bottom: initial;
-    top: 10vh;
+    /* bottom: 14vh; */
+    bottom: 10vh;
+    /* top: 10vh; */
   }
 }

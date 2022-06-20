@@ -1,17 +1,31 @@
 import * as React from 'react'
-import { HeadArea } from './HeaderElements'
-import { useStaticQuery, graphql } from "gatsby"
+import PropTypes from "prop-types"
+import { HeadArea, HeadDiv, HeadLink } from './HeaderElements'
 
 
-const Header = () => {
+const Header = ({ siteTitle }) => {
 
   return (
     <>
       <HeadArea>
-        FacuSounds
+        <HeadDiv>
+          <h1>
+            <HeadLink to="/">
+              {siteTitle}
+            </HeadLink>
+          </h1>
+        </HeadDiv>
       </HeadArea>
     </>
   )
+}
+
+Header.propTypes = {
+  siteTitle: PropTypes.string,
+}
+
+Header.defaultProps = {
+  siteTitle: `FacuSounds`,
 }
 
 export default Header

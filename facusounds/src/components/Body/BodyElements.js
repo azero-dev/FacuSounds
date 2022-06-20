@@ -8,6 +8,10 @@ export const BodyBG = styled.div`
   margin: 0;
   overflow-y: auto;
   overflow-x: hidden;
+
+  /* @media screen and (max-width: 992px) {
+    height: 76vh;
+  } */
 `
 
 export const BodyVideo = styled.div`
