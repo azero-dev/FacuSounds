@@ -4,6 +4,7 @@ export const BodyBG = styled.div`
   background-color: #000;
   width: 100vw;
   height: 80vh;
+  max-width: 80vh;
   padding: 0;
   margin: 0;
   overflow-y: auto;
