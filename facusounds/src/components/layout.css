@@ -35,7 +35,7 @@ body {
 @media screen and (max-width: 992px) {
   #VidBG {
     width: auto;
-    height: 80vh;
+    height: 90vh;
     /* bottom: 14vh; */
     bottom: 0vh;
     /* top: 10vh; */

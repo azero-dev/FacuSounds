@@ -21,7 +21,11 @@ const Footer = () => {
           <FooterLink to="https://github.com/azero-dev/FacuSounds/tree/main/facusounds">
             código abierto
           </FooterLink>
-          {"."}
+          . Alguien hizo este {" "}
+          <FooterLink to="https://t.me/FacuSoundsBot">
+            bot de Telegram
+          </FooterLink>
+          .
         </FooterDiv>
       </FooterArea>
     </>

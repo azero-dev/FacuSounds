@@ -21,7 +21,9 @@ export const FooterDiv = styled.div`
   padding: 0 4vw;
 
   @media screen and (max-width: 992px) {
-    font-size: 0.9em;
+    font-size: .8em;
+    padding: 0 2vw;
+    line-height: 1.2em;
   }
 `
 export const FooterLink = styled(Link)`
