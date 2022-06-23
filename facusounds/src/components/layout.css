@@ -41,3 +41,13 @@ body {
     /* top: 10vh; */
   }
 }
+
+/* Grids */
+/* .grids {
+  display: grid;
+  grid-template-areas: "head"
+                        "main"
+                        "foot";
+  grid-template-rows: 18vh 80vh 10vh;
+  grid-template-columns: 100vw;
+} */
